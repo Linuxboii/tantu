@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tantu"
+version = "1.0.0"
+description = "Website exposure auditor: broken links, mixed content and exposed sensitive files on your own site"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Sushanth Kasturi" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+tantu = "tantu.cli:main"
+
+[tool.setuptools]
+packages = ["tantu"]
